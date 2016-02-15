@@ -1,0 +1,140 @@
+10
+6 false 5 10
+8 false 5 10
+10 false 5 10
+15 false 5 10
+17 false 5 10
+19 false 5 10
+51 false 5 10
+45 false 5 10
+50 false 5 10
+59 false 5 10
+15 true 5
+10 25 75
+100
+10
+6 false 10 10
+8 false 10 10
+10 false 10 10
+15 false 10 10
+17 false 10 10
+19 false 10 10
+51 false 10 10
+45 false 10 10
+50 false 10 10
+59 false 10 10
+15 true 5
+10 25 75
+100
+10
+6 false 15 10
+8 false 15 10
+10 false 15 10
+15 false 15 10
+17 false 15 10
+19 false 15 10
+51 false 15 10
+45 false 15 10
+50 false 15 10
+59 false 15 10
+15 true 5
+10 25 75
+100
+10
+6 false 20 10
+8 false 20 10
+10 false 20 10
+15 false 20 10
+17 false 20 10
+19 false 20 10
+51 false 20 10
+45 false 20 10
+50 false 20 10
+59 false 20 10
+15 true 5
+10 25 75
+100
+10
+6 false 25 10
+8 false 25 10
+10 false 25 10
+15 false 25 10
+17 false 25 10
+19 false 25 10
+51 false 25 10
+45 false 25 10
+50 false 25 10
+59 false 25 10
+15 true 5
+10 25 75
+100
+10
+6 false 30 10
+8 false 30 10
+10 false 30 10
+15 false 30 10
+17 false 30 10
+19 false 30 10
+51 false 30 10
+45 false 30 10
+50 false 30 10
+59 false 30 10
+15 true 5
+10 25 75
+100
+10
+6 false 35 10
+8 false 35 10
+10 false 35 10
+15 false 35 10
+17 false 35 10
+19 false 35 10
+51 false 35 10
+45 false 35 10
+50 false 35 10
+59 false 35 10
+15 true 5
+10 25 75
+100
+10
+6 false 40 10
+8 false 40 10
+10 false 40 10
+15 false 40 10
+17 false 40 10
+19 false 40 10
+51 false 40 10
+45 false 40 10
+50 false 40 10
+59 false 40 10
+15 true 5
+10 25 75
+100
+10
+6 false 45 10
+8 false 45 10
+10 false 45 10
+15 false 45 10
+17 false 45 10
+19 false 45 10
+51 false 45 10
+45 false 45 10
+50 false 45 10
+59 false 45 10
+15 true 5
+10 25 75
+100
+10
+6 false 50 10
+8 false 50 10
+10 false 50 10
+15 false 50 10
+17 false 50 10
+19 false 50 10
+51 false 50 10
+45 false 50 10
+50 false 50 10
+59 false 50 10
+15 true 5
+10 25 75
+100

@@ -1,0 +1,180 @@
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+15
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+30
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+45
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+60
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+75
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+90
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+105
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+120
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+135
+false
+10
+50
+60
+1
+50
+10
+1 false 30 2
+4 false 90 4
+3 false 25 3
+10 false 100 5
+10 false 24 7
+25 false 30 4
+20 false 36 6
+4 false 10 8
+15 false 45 10
+25 false 85 9
+150
+false
+10
+50
+60
+1
+50

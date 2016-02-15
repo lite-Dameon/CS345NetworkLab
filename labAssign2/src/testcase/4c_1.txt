@@ -1,0 +1,105 @@
+1
+6 false 10 10
+15 false 5
+10 25 75
+100
+
+2
+50 false 30 10
+59 false 30 10
+15 false 5
+10 25 75
+100
+
+3
+45 false 60 10
+50 false 60 10
+59 false 60 10
+15 false 5
+10 25 75
+100
+
+4
+51 false 80 10
+45 false 80 10
+50 false 80 10
+59 false 80 10
+15 false 5
+10 25 75
+100
+
+5
+19 false 90 10
+51 false 90 10
+45 false 90 10
+50 false 90 10
+59 false 90 10
+15 false 5
+10 25 75
+100
+
+6
+17 false 100 10
+19 false 100 10
+51 false 100 10
+45 false 100 10
+50 false 100 10
+59 false 100 10
+15 false 5
+10 25 75
+100
+
+7
+15 false 120 10
+17 false 120 10
+19 false 120 10
+51 false 120 10
+45 false 120 10
+50 false 120 10
+59 false 120 10
+15 false 5
+10 25 75
+100
+
+8
+10 false 140 10
+15 false 140 10
+17 false 140 10
+19 false 140 10
+51 false 140 10
+45 false 140 10
+50 false 140 10
+59 false 140 10
+15 false 5
+10 25 75
+100
+
+9
+8 false 150 10
+10 false 150 10
+15 false 150 10
+17 false 150 10
+19 false 150 10
+51 false 150 10
+45 false 150 10
+50 false 150 10
+59 false 150 10
+15 false 5
+10 25 75
+100
+
+10
+6 false 170 10
+8 false 170 10
+10 false 170 10
+15 false 170 10
+17 false 170 10
+19 false 170 10
+51 false 170 10
+45 false 170 10
+50 false 170 10
+59 false 170 10
+15 false 5
+10 25 75
+100
+
