@@ -1,0 +1,471 @@
+package newchord;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontFormatException;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+import java.io.IOException;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.util.Enumeration;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.table.DefaultTableModel;
+import newchord.Node;
+import newchord.Node;
+
+/**
+ *
+ * @author khyati
+ */
+public class GUI extends javax.swing.JFrame {
+
+    private Point initialClick;
+    int m = 3;
+   Node a,b;
+    /**
+     * Creates new form GUI
+     */
+    public GUI() {
+        this.setUndecorated(true);
+        initComponents();
+        this.setBackground(new Color(0,0,1,0));
+        this.setLocationRelativeTo(null);
+        
+        
+        
+         addMouseListener(new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                initialClick = e.getPoint();
+                getComponentAt(initialClick);
+                System.out.println("Pressed");
+            }
+        });
+
+        addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+
+                // get location of Window
+                int thisX = getLocation().x;
+                int thisY = getLocation().y;
+                System.out.println("Dragging");
+
+                // Determine how much the mouse moved since the initial click
+                int xMoved = (thisX + e.getX()) - (thisX + initialClick.x);
+                int yMoved = (thisY + e.getY()) - (thisY + initialClick.y);
+
+                // Move window to this position
+                int X = thisX + xMoved;
+                int Y = thisY + yMoved;
+                setLocation(X, Y);
+            }
+        });
+        yellow.setVisible(false);
+        dirty.setVisible(false);
+        pinky.setVisible(false);
+        fing_table.setVisible(false);
+        fing_table.setRowHeight(20);
+        fing_table.getParent().getParent().setVisible(false);
+        initFont();
+        //blue.setText("S");
+        pinkyText.setText("P");
+        yellowText.setText("S");
+        dirtyText.setText("K");
+        
+        
+        Enumeration e;
+        try {
+            e = NetworkInterface.getNetworkInterfaces();
+            while(e.hasMoreElements())
+            {
+                NetworkInterface n = (NetworkInterface) e.nextElement();
+                Enumeration ee = n.getInetAddresses();
+                while (ee.hasMoreElements()){
+                    InetAddress i = (InetAddress) ee.nextElement();
+                    if(i instanceof Inet4Address){                      
+                        System.out.println(i.getHostAddress());
+                        node_ip.addItem(i.getHostAddress());  
+                    }
+                }
+            }
+        } catch (SocketException ex) {
+            Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    void call_my_methods(){
+        System.out.println("Called me ----------:::::::::::::::::::))))))))))))");
+    }
+    
+        private void initFont() {
+        try {
+            Font font_2 = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/newchord/font/digital-7.ttf")).deriveFont(25f);
+    
+            Font font_1 = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/newchord/font/digital-7.ttf")).deriveFont(35f);
+    
+            Font font = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/newchord/font/digital-7.ttf")).deriveFont(50f);
+    
+            Font font2 = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/newchord/font/digital-7.ttf")).deriveFont(70f);
+            Font font3 = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/newchord/font/digital-7.ttf")).deriveFont(60f);
+            connect_button.setFont(font_2);
+            blue.setFont(font);
+            yellowText.setFont(font);
+            pinkyText.setFont(font);
+            dirtyText.setFont(font);
+            node_id_label.setFont(font2);
+            node_id_value.setFont(font3);
+            myDetails.setFont(font_1);
+            known_details.setFont(font_1);
+        } catch (FontFormatException | IOException ex) {
+            //Logger.getLogger(ClockView.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Failed");
+        }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        close = new javax.swing.JLabel();
+        pinkyText = new javax.swing.JLabel();
+        dirtyText = new javax.swing.JLabel();
+        yellowText = new javax.swing.JLabel();
+        yellow = new javax.swing.JLabel();
+        dirty = new javax.swing.JLabel();
+        pinky = new javax.swing.JLabel();
+        connect_button = new javax.swing.JButton();
+        myDetails = new javax.swing.JLabel();
+        node_ip = new javax.swing.JComboBox<>();
+        known_node_id = new javax.swing.JTextField();
+        known_node_ip = new javax.swing.JTextField();
+        known_node_port = new javax.swing.JTextField();
+        known_details = new javax.swing.JLabel();
+        node_id = new javax.swing.JTextField();
+        node_port = new javax.swing.JTextField();
+        node_id_value = new javax.swing.JLabel();
+        node_id_label = new javax.swing.JLabel();
+        node = new javax.swing.JLabel();
+        blue = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        fing_table = new javax.swing.JTable();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newchord/images/close.png"))); // NOI18N
+        close.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                closeMouseClicked(evt);
+            }
+        });
+        getContentPane().add(close, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, -1, -1));
+
+        pinkyText.setText("pinky");
+        getContentPane().add(pinkyText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 40, 50));
+
+        dirtyText.setText("dirty");
+        getContentPane().add(dirtyText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 40, 40));
+
+        yellowText.setText("yellow");
+        getContentPane().add(yellowText, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 40, 50));
+
+        yellow.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\yellow.png")); // NOI18N
+        getContentPane().add(yellow, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 530, -1, -1));
+
+        dirty.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\dirty.png")); // NOI18N
+        getContentPane().add(dirty, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
+
+        pinky.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\pink.png")); // NOI18N
+        getContentPane().add(pinky, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 140, 50));
+
+        connect_button.setForeground(new java.awt.Color(28, 104, 197));
+        connect_button.setText("Connect");
+        connect_button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                connect_buttonMouseClicked(evt);
+            }
+        });
+        getContentPane().add(connect_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 450, 170, 40));
+
+        myDetails.setForeground(new java.awt.Color(255, 255, 204));
+        myDetails.setText("My Details");
+        getContentPane().add(myDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 260, 50));
+
+        node_ip.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { }));
+        getContentPane().add(node_ip, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 130, 30));
+
+        known_node_id.setText("-1");
+        getContentPane().add(known_node_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 120, 30));
+
+        known_node_ip.setText("nothing");
+        known_node_ip.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                known_node_ipActionPerformed(evt);
+            }
+        });
+        getContentPane().add(known_node_ip, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 110, 30));
+
+        known_node_port.setText("-1");
+        known_node_port.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                known_node_portActionPerformed(evt);
+            }
+        });
+        getContentPane().add(known_node_port, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, 120, 30));
+
+        known_details.setForeground(new java.awt.Color(255, 255, 204));
+        known_details.setText("Known Node Details");
+        getContentPane().add(known_details, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 300, 50));
+        getContentPane().add(node_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 120, 30));
+
+        node_port.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                node_portActionPerformed(evt);
+            }
+        });
+        getContentPane().add(node_port, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 120, 30));
+
+        node_id_value.setForeground(new java.awt.Color(255, 255, 204));
+        node_id_value.setText("1");
+        getContentPane().add(node_id_value, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 60, 100));
+
+        node_id_label.setForeground(new java.awt.Color(255, 255, 204));
+        node_id_label.setText("NODE");
+        getContentPane().add(node_id_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 200, 60));
+
+        node.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\node.png")); // NOI18N
+        node.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                nodeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                nodeMouseExited(evt);
+            }
+        });
+        getContentPane().add(node, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 570, 580));
+
+        blue.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\blue.png")); // NOI18N
+        getContentPane().add(blue, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 290, -1, -1));
+
+        fing_table.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        fing_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "START", "ID", "IP", "PORT"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        fing_table.setAutoscrolls(false);
+        jScrollPane2.setViewportView(fing_table);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 380, 450));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void nodeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nodeMouseEntered
+        // TODO add your handling code here:
+        yellow.setVisible(true);
+        dirty.setVisible(true);
+        pinky.setVisible(true);
+        if(fing_table.getRowCount() > 0){
+            fing_table.setVisible(true);
+            fing_table.getParent().getParent().setVisible(true);
+        }
+    }//GEN-LAST:event_nodeMouseEntered
+
+    void table_add_item(int start, int id, String ip, int port){
+        DefaultTableModel model = (DefaultTableModel) fing_table.getModel();
+        model.addRow(new Object[]{start,id,ip,port});
+    }
+    
+    void table_update_item(int index,int id, String ip, int port){
+         DefaultTableModel model = (DefaultTableModel) fing_table.getModel();
+         model.setValueAt(id, index, 1);
+         model.setValueAt(ip, index, 2);
+         model.setValueAt(port, index, 3);
+    }
+    
+    private void nodeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nodeMouseExited
+        // TODO add your handling code here:
+        yellow.setVisible(false);
+        dirty.setVisible(false);
+        pinky.setVisible(false);
+        fing_table.setVisible(false);
+        fing_table.getParent().getParent().setVisible(false);
+    }//GEN-LAST:event_nodeMouseExited
+
+    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_closeMouseClicked
+
+    private void node_portActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_node_portActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_node_portActionPerformed
+
+    private void known_node_ipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_known_node_ipActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_known_node_ipActionPerformed
+
+    private void known_node_portActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_known_node_portActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_known_node_portActionPerformed
+
+    boolean verify(){
+        try{
+            Integer.parseInt(node_id.getText().toString());
+            Integer.parseInt(known_node_id.getText().toString());
+            if(node_ip.equals("") || known_node_ip.equals(""))
+                return false;
+            Integer.parseInt(node_port.getText().toString());
+            Integer.parseInt(known_node_port.getText().toString());
+        }
+        catch(Exception ex){
+            return false;
+        }
+        return true;
+    }
+    
+    private void connect_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_connect_buttonMouseClicked
+        // TODO add your handling code here:
+        if(verify())
+        {
+            node_id.setEditable(false);
+            node_ip.setEditable(false);
+            node_port.setEditable(false);
+
+            known_node_id.setEditable(false);
+            known_node_ip.setEditable(false);
+            known_node_port.setEditable(false);
+            connect_button.setEnabled(false);
+            
+            //a = new Node(m,Integer.parseInt(node_id.getText().toString()));
+            
+            if(known_node_ip.getText().toString().equals("nothing") 
+               && Integer.parseInt(known_node_port.getText().toString()) == -1
+               && Integer.parseInt(known_node_id.getText().toString()) == -1){
+                System.out.println("First Node");
+                a = new Node(m,Integer.parseInt(node_id.getText().toString()));    
+                a.ipAddress = node_ip.getSelectedItem().toString();
+                a.port = Integer.parseInt(node_port.getText().toString());
+                
+                a.setFrame(this);
+                a.node_initialize();
+                a.first_node();
+//                a.node_id = Integer.parseInt(node_id.getText().toString());
+//                a.ipAddress = node_ip.getSelectedItem().toString();
+//                a.port = Integer.parseInt(node_port.getText().toString());
+//                a.node_initialize();
+//                a.first_node();
+            }
+            else{
+                int id_a = Integer.parseInt(known_node_id.getText().toString());
+                int id_b = Integer.parseInt(node_id.getText().toString());
+                a = new Node(m,id_a);
+                b = new Node(m,id_b);
+                System.out.println("Join node");
+                a.ipAddress =  known_node_ip.getText().toString();
+                a.port = Integer.parseInt(known_node_port.getText().toString());
+                
+                b.ipAddress =  node_ip.getSelectedItem().toString();
+                b.port = Integer.parseInt(node_port.getText().toString());;
+                
+                
+                b.setFrame(this);
+                b.node_initialize();
+                b.join(a.node_id, a.ipAddress, a.port);
+// 
+            }
+        }
+        else 
+                System.out.println("Invalid Details");
+        
+    }//GEN-LAST:event_connect_buttonMouseClicked
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new GUI().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel blue;
+    private javax.swing.JLabel close;
+    private javax.swing.JButton connect_button;
+    private javax.swing.JLabel dirty;
+    private javax.swing.JLabel dirtyText;
+    private javax.swing.JTable fing_table;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel known_details;
+    private javax.swing.JTextField known_node_id;
+    private javax.swing.JTextField known_node_ip;
+    private javax.swing.JTextField known_node_port;
+    private javax.swing.JLabel myDetails;
+    private javax.swing.JLabel node;
+    private javax.swing.JTextField node_id;
+    private javax.swing.JLabel node_id_label;
+    private javax.swing.JLabel node_id_value;
+    private javax.swing.JComboBox<String> node_ip;
+    private javax.swing.JTextField node_port;
+    private javax.swing.JLabel pinky;
+    private javax.swing.JLabel pinkyText;
+    private javax.swing.JLabel yellow;
+    private javax.swing.JLabel yellowText;
+    // End of variables declaration//GEN-END:variables
+}
