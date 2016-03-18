@@ -23,7 +23,10 @@ Developed by Mayank Arya with passion & patience.
 -- If other node joins the network enter the details of the new node and the information of the known node
 
 ## Demo
-![Chord GUI demo ](https://github.com/mamexo/CS345NetworkLab/img/sample.png)
+![Chord GUI demo ](https://github.com/mamexo/CS345NetworkLab/blob/master/Chord/img/sample.png)
 
+
+
+https://github.com/mamexo/CS345NetworkLab/img/sample.png
 
 
