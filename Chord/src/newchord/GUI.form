@@ -129,7 +129,7 @@
     <Component class="javax.swing.JLabel" name="yellow">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\khyati\Pictures\yellow.png"/>
+          <Image iconType="3" name="/newchord/images/yellow.png"/>
         </Property>
       </Properties>
       <Events>
@@ -144,7 +144,7 @@
     <Component class="javax.swing.JLabel" name="dirty">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\khyati\Pictures\dirty.png"/>
+          <Image iconType="3" name="/newchord/images/dirty.png"/>
         </Property>
       </Properties>
       <Events>
@@ -159,7 +159,7 @@
     <Component class="javax.swing.JLabel" name="pinky">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\khyati\Pictures\pink.png"/>
+          <Image iconType="3" name="/newchord/images/pink.png"/>
         </Property>
       </Properties>
       <Events>
@@ -309,7 +309,7 @@
     <Component class="javax.swing.JLabel" name="node">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\khyati\Pictures\node.png"/>
+          <Image iconType="3" name="/newchord/images/node.png"/>
         </Property>
       </Properties>
       <Events>
@@ -327,7 +327,7 @@
     <Component class="javax.swing.JLabel" name="blue">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\khyati\Pictures\blue.png"/>
+          <Image iconType="3" name="/newchord/images/blue.png"/>
         </Property>
       </Properties>
       <Events>
