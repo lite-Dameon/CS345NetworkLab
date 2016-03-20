@@ -129,7 +129,11 @@
     <Component class="javax.swing.JLabel" name="yellow">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+<<<<<<< HEAD
           <Image iconType="3" name="/newchord/images/yellow.png"/>
+=======
+          <Image iconType="2" name="C:\Users\khyati\Pictures\yellow.png"/>
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         </Property>
       </Properties>
       <Events>
@@ -144,7 +148,11 @@
     <Component class="javax.swing.JLabel" name="dirty">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+<<<<<<< HEAD
           <Image iconType="3" name="/newchord/images/dirty.png"/>
+=======
+          <Image iconType="2" name="C:\Users\khyati\Pictures\dirty.png"/>
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         </Property>
       </Properties>
       <Events>
@@ -159,7 +167,11 @@
     <Component class="javax.swing.JLabel" name="pinky">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+<<<<<<< HEAD
           <Image iconType="3" name="/newchord/images/pink.png"/>
+=======
+          <Image iconType="2" name="C:\Users\khyati\Pictures\pink.png"/>
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         </Property>
       </Properties>
       <Events>
@@ -309,7 +321,11 @@
     <Component class="javax.swing.JLabel" name="node">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+<<<<<<< HEAD
           <Image iconType="3" name="/newchord/images/node.png"/>
+=======
+          <Image iconType="2" name="C:\Users\khyati\Pictures\node.png"/>
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         </Property>
       </Properties>
       <Events>
@@ -327,7 +343,11 @@
     <Component class="javax.swing.JLabel" name="blue">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+<<<<<<< HEAD
           <Image iconType="3" name="/newchord/images/blue.png"/>
+=======
+          <Image iconType="2" name="C:\Users\khyati\Pictures\blue.png"/>
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         </Property>
       </Properties>
       <Events>

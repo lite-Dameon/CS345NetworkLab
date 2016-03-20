@@ -49,7 +49,11 @@ public class GUI extends javax.swing.JFrame {
         
         
         
+<<<<<<< HEAD
          node.addMouseListener(new MouseAdapter() {
+=======
+         addMouseListener(new MouseAdapter() {
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
             public void mousePressed(MouseEvent e) {
                 initialClick = e.getPoint();
                 getComponentAt(initialClick);
@@ -57,7 +61,11 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
         node.addMouseMotionListener(new MouseMotionAdapter() {
+=======
+        addMouseMotionListener(new MouseMotionAdapter() {
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
             @Override
             public void mouseDragged(MouseEvent e) {
 
@@ -233,7 +241,11 @@ public class GUI extends javax.swing.JFrame {
         yellowText.setText("yellow");
         getContentPane().add(yellowText, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 550, 40, 50));
 
+<<<<<<< HEAD
         yellow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newchord/images/yellow.png"))); // NOI18N
+=======
+        yellow.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\yellow.png")); // NOI18N
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         yellow.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 yellowMouseClicked(evt);
@@ -241,7 +253,11 @@ public class GUI extends javax.swing.JFrame {
         });
         getContentPane().add(yellow, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 560, -1, -1));
 
+<<<<<<< HEAD
         dirty.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newchord/images/dirty.png"))); // NOI18N
+=======
+        dirty.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\dirty.png")); // NOI18N
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         dirty.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 dirtyMouseClicked(evt);
@@ -249,7 +265,11 @@ public class GUI extends javax.swing.JFrame {
         });
         getContentPane().add(dirty, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, -1, -1));
 
+<<<<<<< HEAD
         pinky.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newchord/images/pink.png"))); // NOI18N
+=======
+        pinky.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\pink.png")); // NOI18N
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         pinky.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pinkyMouseClicked(evt);
@@ -311,7 +331,11 @@ public class GUI extends javax.swing.JFrame {
         node_id_label.setText("NODE");
         getContentPane().add(node_id_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, 200, 60));
 
+<<<<<<< HEAD
         node.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newchord/images/node.png"))); // NOI18N
+=======
+        node.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\node.png")); // NOI18N
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         node.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 nodeMouseMoved(evt);
@@ -330,7 +354,11 @@ public class GUI extends javax.swing.JFrame {
         });
         getContentPane().add(node, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 570, 580));
 
+<<<<<<< HEAD
         blue.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newchord/images/blue.png"))); // NOI18N
+=======
+        blue.setIcon(new javax.swing.ImageIcon("C:\\Users\\khyati\\Pictures\\blue.png")); // NOI18N
+>>>>>>> b58f660bf3884d60632f33d8069b1cc9413677de
         blue.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 blueMouseClicked(evt);
